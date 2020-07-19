@@ -9,7 +9,7 @@ function shoppingList() {
     
    if (listItem !== "") {
       $('.shopping-list').append(`<li>
-        <span class="shopping-item">${listItem}</span>
+        <span class="item">${listItem}</span>
         <div class="shopping-item-controls">
           <button class="shopping-item-toggle">
             <span class="button-label">check</span>
@@ -25,7 +25,7 @@ function shoppingList() {
 
 
 $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
-  $(this).closest('.shopping-item-controls').siblings('.shopping-item').toggleClass('shopping-item__checked');
+  $(this).closest('.shopping-item-controls').siblings('.item').toggleClass('shopping-item__checked');
 });
 
 
